@@ -1,0 +1,19 @@
+class Person():
+    def __init__(self, first_name, last_name, age, phone_number):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.phone_number = phone_number
+
+    def __str__(self):
+        return str(f"{self.first_name}   {self.last_name}   {self.age}   {self.phone_number}")
+    
+    """
+    Creates an object of a person that requires
+    First name,
+    Last name,
+    Age,
+    Phone Number,
+
+    It also prints those 4 requirments of creation
+    """

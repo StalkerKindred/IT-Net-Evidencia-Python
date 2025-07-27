@@ -77,7 +77,7 @@ def find_person(insured_list):
 def input_and_checker(type = "none", number_type = ""):
     #Checking for INT/numbers type 
     if type == "number":
-        print("numbering")
+
         checking_number = True
 
         while checking_number:
@@ -97,7 +97,7 @@ def input_and_checker(type = "none", number_type = ""):
 
                 #Minimum and Maximum characters for phone number
                 if number_type == "phone" and (len(user_input) > 10 or len(user_input) < 9):
-                    print("You need to enter numbers between 9-10 (0-9)")
+                    print("You need to enter at least 9 or maximum of 10 numbers")
                     continue
 
                 return user_input
@@ -115,8 +115,8 @@ def input_and_checker(type = "none", number_type = ""):
         while checking_letters:
 
             user_input = input().strip()
+            
             #min characters
-
             if len(user_input) == 0:
                 print("You need to enter at least 1 letter.")
                 continue
